@@ -18,8 +18,6 @@
       line-height: 1.7;
       color: #333;
       background-color: #f9f9f9;
-      padding: 0;
-      margin: 0;
     }
 
     header {
@@ -55,6 +53,12 @@
       font-size: 1.8rem;
     }
 
+    h3 {
+      color: #34495e;
+      margin: 1.2rem 0 0.8rem;
+      font-size: 1.4rem;
+    }
+
     p {
       margin-bottom: 1rem;
       text-align: justify;
@@ -70,13 +74,13 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
-    .video-container video {
+    .video-container iframe {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      border: none;
     }
 
     ul {
@@ -85,7 +89,7 @@
     }
 
     li {
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.7rem;
     }
 
     a {
@@ -120,6 +124,9 @@
       h2 {
         font-size: 1.5rem;
       }
+      h3 {
+        font-size: 1.25rem;
+      }
     }
   </style>
 </head>
@@ -153,10 +160,13 @@
     <section>
       <h2>🎥 Vídeo Promocional</h2>
       <div class="video-container">
-        <video controls poster="poster.jpg">
-          <source src="O%20Que%20Resta%20Quando%20a%20Mem%C3%B3ria%20Some_%20(1).mp4" type="video/mp4">
-          Seu navegador não suporta vídeos.
-        </video>
+        <!-- Substitua o ID do vídeo pelo seu próprio quando disponível -->
+        <iframe 
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=exemplo" 
+          title="O Que Resta Quando a Memória Some – Vídeo Promocional"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
       <p><em>O vídeo reflete poeticamente os temas centrais do livro: memória, identidade, justiça e recomeço.</em></p>
     </section>
@@ -165,15 +175,16 @@
       <h2>🔗 Recursos sobre o Efeito Lázaro</h2>
       <h3>📰 Artigos e Pesquisas</h3>
       <ul>
-        <li><a href="https://www.bbc.com/portuguese/geral-58476092" target="_blank" rel="noopener">BBC – O Homem que Esqueceu Tudo</a></li>
-        <li><a href="https://www.scientificamerican.com/article/amnesia-and-identity/" target="_blank" rel="noopener">Scientific American – Amnesia and Identity (em inglês)</a></li>
-        <li><a href="https://www.sciam.com.br/" target="_blank" rel="noopener">Scientific American Brasil – Justiça e Neurociência</a></li>
+        <li><a href="https://www.bbc.com/portuguese/geral-58476092" target="_blank" rel="noopener">BBC – O Homem que Esqueceu Tudo (Clive Wearing)</a></li>
+        <li><a href="https://www.scientificamerican.com/article/amnesia-and-identity/" target="_blank" rel="noopener">Scientific American – Amnesia and Identity</a></li>
+        <li><a href="https://www.nature.com/articles/s41598-021-89347-3" target="_blank" rel="noopener">Nature – Neural correlates of identity in memory disorders</a></li>
       </ul>
 
       <h3>▶️ Vídeos Relacionados</h3>
       <ul>
-        <li><a href="https://www.youtube.com/results?search_query=the+lazarus+effect+memory+neuroscience" target="_blank" rel="noopener">YouTube – “The Lazarus Effect: When Memory Fails”</a></li>
-        <li><a href="https://www.ted.com/talks?utf8=%E2%9C%93&q=amnesia+identity" target="_blank" rel="noopener">TED Talks – Amnésia e Identidade</a></li>
+        <li><a href="https://www.youtube.com/watch?v=6K2YBkGq1cY" target="_blank" rel="noopener">TED-Ed – What happens when you lose your memory?</a></li>
+        <li><a href="https://www.ted.com/talks/jill_bolte_taylor_my_stroke_of_insight" target="_blank" rel="noopener">Jill Bolte Taylor: Meu derrame de iluminação</a></li>
+        <li><a href="https://www.youtube.com/watch?v=VtKbiyyVZks" target="_blank" rel="noopener">BBC Horizon – The Man with 7 Seconds of Memory</a></li>
       </ul>
     </section>
 
